@@ -1,0 +1,37 @@
+[
+        {
+                "label" : "Home",
+                "link" : "/",
+                "isDropdown" : false
+        },
+        {
+                "label" : "Blog",
+                "link" : "/Blog",
+                "isDropdown" : false
+        },
+        {
+                "label" : "Website",
+                "link" : "/Website",
+                "isDropdown" : false
+        },
+        {
+                "label" : "Services",
+                "link" : "/Services",
+                "isDropdown" : true,
+                "dropdownMenu" : [
+                        {
+                                "label" : "team",
+                                "link" : "/team"
+                        },
+                        {
+                                "label" : "Contact",
+                                "link" : "/Contact"
+                        },
+                        {
+                                "label" : "Images",
+                                "link" : "/Images"
+                        }
+                ]
+        }
+        
+]
