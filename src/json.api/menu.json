@@ -2,17 +2,20 @@
         {
                 "label" : "Home",
                 "link" : "/",
-                "isDropdown" : false
+                "isDropdown" : false,
+                "isButton" : false
         },
         {
                 "label" : "Blog",
                 "link" : "/Blog",
-                "isDropdown" : false
+                "isDropdown" : false,
+                "isButton" : false
         },
         {
                 "label" : "Website",
                 "link" : "/Website",
-                "isDropdown" : false
+                "isDropdown" : false,
+                "isButton" : false
         },
         {
                 "label" : "Services",
@@ -32,6 +35,12 @@
                                 "link" : "/Images"
                         }
                 ]
+        },
+        {
+                "label" : "Register",
+                "link" : "/register",
+                "isDropdown" : false,
+                "isButton" : true
         }
         
 ]
