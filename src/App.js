@@ -3,6 +3,9 @@ import Footer from "./Component/Footer/Footer";
 import Header from "./Component/Header/Header";
 import Homepage from "./Component/Homepage/Homepage";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
+import 'animate.css/animate.min.css';
+
 import { 
   BrowserRouter as Router,
   Routes,

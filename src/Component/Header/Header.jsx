@@ -15,7 +15,7 @@ const Menu = ({item}) =>{
                 <Link data-bs-dismiss="Navbar"
                 style = {{color : item.color}}
                 to={item.link} 
-                className={item.isButton ? "btn btn-primary" : "nav-link "}
+                className={item.isButton ? "btn px-3 mx-3 fw-bold btn-primary" : "nav-link "}
                 >{item.label}</Link>
           );
           return design ;
@@ -26,6 +26,7 @@ const DropdownMenu = ({item}) =>{
 
                 <>
                  <NavDropdown  title={item.label} id="basic-nav-dropdown">
+                        <i className="fa fa-caret-up arrow"></i>
                   {
                        item.dropdownMenu.map((data,index)=>{
                          return <Menu item={data } />
@@ -42,7 +43,7 @@ const Header = () =>{
         console.log(menu);
         const design = (
                 <>
-                 <Navbar expand="lg" className="fixed-top">
+                 <Navbar expand="lg" className="border-bottom fixed-top">
                  <Container>
                         <Image src={brand.logo} width="40px"/>
                   <Navbar.Brand href="#home" className="mx-3 text-white brand-name fw-bold">{brand.name}</Navbar.Brand>

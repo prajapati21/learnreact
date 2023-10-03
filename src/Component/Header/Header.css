@@ -4,3 +4,36 @@
 #basic-nav-dropdown{
         color: #fff !important
 }
+.arrow{
+        font-size : 40px !important;
+        position : absolute;
+        top : -27px;
+        color : white;
+        left : 27px;
+}
+.dropdown-menu{
+        position : relative;
+        top: 60px !important;
+        animation: flipInY;
+        animation-duration: 1s;
+}
+
+@media(max-width:768px)
+{
+   .navbar{
+        position : inherit !important;
+        background-color: black;
+   }
+   .navbar-toggler{
+        background-color: #fff !important;
+   }
+   .navbar-toggler-icon {
+        background: inherit !important;
+   }
+   .navbar-toggler-icon::before {
+        font-family: "FontAwesome";
+        content: "\f038";
+        color: #000 !important;
+        font-size: 30px;
+   }
+}
