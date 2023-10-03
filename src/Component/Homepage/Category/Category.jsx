@@ -1,22 +1,23 @@
-import { Container,Row,Col,Card,Button } from "react-bootstrap";
+import "./Category.css"
+import { Container,Row,Col,Card, } from "react-bootstrap";
+import category from "../../../json.api/category.json"
 
-const Category = () =>{
-          
-        const data = ["a", "b", "c", "d", "e"];
 
-        const Column = () =>{
+        const Column = ({data}) =>{
                 const design = (
                         <>
-                        <Col>
+                        <Col md className="mt-5 mt-md-0">
                         <Card>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Body>
-                                        <Card.Title>Card Title</Card.Title>
+                                <Card.Body className="text-center">
+                                        <div className="icon-box">
+                                        <i className={data.icon}></i>
+                                        </div>
+                                        <Card.Title>{data.title}</Card.Title>
                                         <Card.Text>
-                                        Some quick example text to build on the card title and make up the
-                                        bulk of the card's content.
+                                       {
+                                        data.subTitle
+                                       }
                                         </Card.Text>
-                                        <Button variant="primary">Go somewhere</Button>
                                 </Card.Body>
                         </Card>
                         </Col>
@@ -25,13 +26,15 @@ const Category = () =>{
                 return design;
         }
 
+        const Category = () =>{
         const design = (
                 <>
-                       <Container>
+                       <Container className="category-box">
                         <Row>
                                 {
-                                        data.map((data,index)=>{
-                                            return< Column />
+                                        category.map((data,index)=>{
+                                            return< Column data={data} key={index} />
+                                            
                                         })
                                 }
                         </Row>
